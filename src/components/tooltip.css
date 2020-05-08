@@ -1,0 +1,37 @@
+.tooltip {
+  position: relative;
+  margin-top: -200px;
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+  background-color: lightcoral;
+  margin-left: -5px;
+}
+.tooltip:after {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-right: 2px solid lightcoral;
+  border-bottom: 2px solid lightcoral;
+  top: 100%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -12.5px;
+  content: "";
+  transform: rotate(45deg);
+  background-color: lightcoral;
+}
+.rotateLeft {
+  margin-left: -200px;
+  margin-top: 1px;
+  transform: rotate(-90deg);
+}
+.rotateRight {
+  margin-left: 200px;
+  margin-top: auto;
+  transform: rotate(90deg);
+}
+.placeBottom {
+  margin-top: 100px;
+  transform: rotate(180deg);
+}

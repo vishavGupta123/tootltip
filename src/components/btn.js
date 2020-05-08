@@ -44,13 +44,13 @@ class btn extends React.Component {
             fontSize: "large",
           }}
         >
+          Press
           {this.state.showTooltip === true ? (
             <Tooltip
               coordinatesOfButton={this.state.coordinatesOfButton}
               direction={this.state.direction}
             />
           ) : null}
-          Press
         </button>
       </div>
     );
